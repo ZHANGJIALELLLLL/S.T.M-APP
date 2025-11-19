@@ -106,7 +106,7 @@ fun AddTaskScreen(navController: NavController) {
         }
     }
 
-    // 定期清理过期任务
+    // Regularly clear out expired tasks
     LaunchedEffect(Unit) {
         viewModel.cleanExpired()
     }

@@ -64,13 +64,8 @@ fun LoginScreen(navController: NavController) {
             onClick = {
                 scope.launch {
                     viewModel.saveLoginState()
-//                    val surveyDone = dataStore.surveyDoneFlow.first()
-//                    if (surveyDone) {
-//                        navController.navigate(Routes.MAIN)
-//                    } else {
-//                        navController.navigate(Routes.SURVEY)
-//                    }
-                    navController.navigate(Routes.MAIN)//跳转到survey页面
+//
+                    navController.navigate(Routes.MAIN)//Jump to the survey page
                 }
             },
             modifier = Modifier.fillMaxWidth()

@@ -1,6 +1,6 @@
 package com.example.cp3406_stm_app.ui
 //import com.example.cp3406_stm_app.viewmodel.TaskViewModel
-//import androidx.compose.material.icons.filled.Delete // 新增：删除图标
+//import androidx.compose.material.icons.filled.Delete // New addition: Delete icon
 import android.app.Application
 import android.app.TimePickerDialog
 import androidx.compose.foundation.layout.Arrangement
@@ -193,81 +193,3 @@ fun CourseItem(name: String, day: String, start: String, end: String, onDelete: 
         }
     }
 }
-//            OutlinedTextField(
-//                value = taskName,
-//                onValueChange = { taskName = it },
-//                label = { Text("Task Name") },
-//                modifier = Modifier.fillMaxWidth()
-//            )
-//            Spacer(Modifier.height(12.dp))
-//            Button(
-//                onClick = {
-//                    if (taskName.isNotBlank()) {
-////                       viewModel.addTask(taskName)
-//                        taskName = ""
-//                    }
-//                },
-//                modifier = Modifier.fillMaxWidth()
-//            ) {
-//                Text("Add Task")
-//            }
-
-//            Spacer(Modifier.height(16.dp))
-//            Text("Progress: ${(progress * 100).toInt()}%", style = MaterialTheme.typography.titleMedium)
-//            LinearProgressIndicator(
-//                progress = progress,
-//                modifier = Modifier
-//                    .fillMaxWidth()
-//                    .height(8.dp)
-//            )//进度条
-
-//            Spacer(Modifier.height(24.dp))
-//            LazyColumn {
-//                items(tasks) { task ->
-//                    TaskItem(
-//                        name = task.name,
-//                        completed = task.completed,
-//                        onToggle = { viewModel.toggleTaskCompleted(task.id, !task.completed) }
-//                    )
-//                }
-//            }
-//        }
-//    }
-
-    // 定期清理过期任务
-//    LaunchedEffect(Unit) {
-//        viewModel.cleanExpired()
-//    }
-//}
-
-//@Composable
-//fun TaskItem(name: String, completed: Boolean, onToggle: () -> Unit) {
-//    Card(
-//        modifier = Modifier
-//            .fillMaxWidth()
-//            .padding(vertical = 4.dp),
-//        colors = CardDefaults.cardColors(
-//            containerColor = if (completed) MaterialTheme.colorScheme.surfaceVariant else MaterialTheme.colorScheme.surface
-//        )
-//    ) {
-//        Row(
-//            modifier = Modifier
-//                .fillMaxWidth()
-//                .padding(12.dp),
-//            horizontalArrangement = Arrangement.SpaceBetween,
-//            verticalAlignment = Alignment.CenterVertically
-//        ) {
-//            Text(
-//                text = name,
-//                style = MaterialTheme.typography.bodyLarge,
-//                color = if (completed) MaterialTheme.colorScheme.outline else MaterialTheme.colorScheme.onSurface
-//            )
-//            Button(
-//                onClick = onToggle
-//            ) {
-//                Text(if (completed) "✅ Done" else "Mark Done")
-//            }
-//        }
-//    }
-
-//}

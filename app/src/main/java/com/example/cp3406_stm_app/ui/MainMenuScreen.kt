@@ -25,7 +25,7 @@ import com.example.cp3406_stm_app.navigation.Routes
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MainMenuScreen(navController: NavController) {
-//    val app = LocalContext.current.applicationContext as MyApplication  临时存储
+//    val app = LocalContext.current.applicationContext as MyApplication  Temporary storage
 //    val viewModel = remember { MainViewModel(DataStoreManager(app)) }
 //    val email by viewModel.email.collectAsState()
 
@@ -44,11 +44,7 @@ fun MainMenuScreen(navController: NavController) {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-//            Text(
-//                text = "Welcome, ${email.ifEmpty { "Student" }} 👋",
-//                style = MaterialTheme.typography.titleLarge,
-//                fontWeight = FontWeight.Bold
-//            )删除
+//
             Spacer(Modifier.height(24.dp))
 
             Button(

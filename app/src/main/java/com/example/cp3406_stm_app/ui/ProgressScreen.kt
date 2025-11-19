@@ -64,7 +64,7 @@ fun ProgressScreen(navController: NavController) {
             Text("Task Completion", style = MaterialTheme.typography.titleLarge)
             Spacer(Modifier.height(16.dp))
 
-            // 🟢 饼状进度条
+            // A disc-shaped progress bar
             Box(
                 modifier = Modifier.size(200.dp),
                 contentAlignment = Alignment.Center
@@ -92,7 +92,7 @@ fun ProgressScreen(navController: NavController) {
 
             Spacer(Modifier.height(32.dp))
 
-            // 显示任务总数与完成数
+            // Display the total number of tasks and the number of completed tasks
             Text("Total tasks: ${tasks.size}", style = MaterialTheme.typography.bodyLarge)
             Text("Completed: ${tasks.count { it.completed }}", style = MaterialTheme.typography.bodyLarge)
         }
