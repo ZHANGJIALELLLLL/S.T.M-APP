@@ -17,8 +17,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.cp3406_stm_app.navigation.Routes
+
+
+
 
 //import com.example.cp3406_stm_app.viewmodel.MainViewModel
 
@@ -44,6 +48,14 @@ fun MainMenuScreen(navController: NavController) {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
+//logo
+            Text(
+                text = "S.T.M APP",
+                //
+                fontSize = 32.sp,
+                // fontWeight = FontWeight.Bold,
+            )
+
 //
             Spacer(Modifier.height(24.dp))
 

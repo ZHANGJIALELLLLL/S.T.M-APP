@@ -13,10 +13,10 @@
       </SelectionState>
       <SelectionState runConfigName="LoginScreenTest">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-11-19T15:50:13.249243Z">
+        <DropdownSelection timestamp="2025-11-20T02:21:33.521467Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=/Users/hailey/.android/avd/Pixel_7.avd" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=/Users/hailey/.android/avd/Medium_Phone.avd" />
             </handle>
           </Target>
         </DropdownSelection>
