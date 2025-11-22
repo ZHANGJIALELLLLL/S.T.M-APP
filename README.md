@@ -80,7 +80,7 @@ app/
  └─ navigation/            # Navigation Graph
      └─ NavGraph.kt
 
-## 6.Steps 操作步骤
+## 6.Steps
 Clone this repository
 Open the project in Android Studio
 Sync Gradle
