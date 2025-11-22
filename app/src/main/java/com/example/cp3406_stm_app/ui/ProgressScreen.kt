@@ -32,15 +32,17 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.cp3406_stm_app.viewmodel.TaskViewModel
 
+
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ProgressScreen(navController: NavController) {
     val app = LocalContext.current.applicationContext as android.app.Application
     val viewModel = remember { TaskViewModel(app)}
     val tasks by viewModel.tasks.collectAsState()
-    val progress by viewModel.progressDegrees.collectAsState()
+    val progressDegree by viewModel.progressDegrees.collectAsState()//0-360
     //
-
+    val progressValue by viewModel.progressValue.collectAsState()//0-100
     Scaffold(
         topBar = {
             TopAppBar(
@@ -70,7 +72,7 @@ fun ProgressScreen(navController: NavController) {
                 contentAlignment = Alignment.Center
             ) {
                 Canvas(modifier = Modifier.size(200.dp)) {
-                    val sweepAngle: Float = progress
+                    val sweepAngle: Float = progressDegree //new,范围调整0到360度
                     drawArc(
                         color = Color.LightGray,
                         startAngle = 0f,
@@ -85,7 +87,7 @@ fun ProgressScreen(navController: NavController) {
                     )
                 }
                 Text(
-                    text = "${progress}%",
+                    text = "${progressValue}%",//0到100
                     style = MaterialTheme.typography.titleLarge
                 )
             }

@@ -112,7 +112,7 @@ fun AddTaskScreen(navController: NavController) {
     }
 }
 
-@Composable
+@Composable//ui
 fun TaskItem(name: String, completed: Boolean, onToggle: () -> Unit) {
     Card(
         modifier = Modifier

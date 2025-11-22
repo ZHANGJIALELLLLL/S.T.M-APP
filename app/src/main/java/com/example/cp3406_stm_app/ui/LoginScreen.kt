@@ -68,6 +68,7 @@ fun LoginScreen(navController: NavController) {
                     navController.navigate(Routes.MAIN)//Jump to the survey page
                 }
             },
+            enabled = email.isNotBlank(),//邮件为空就不能点击
             modifier = Modifier.fillMaxWidth()
         ) {
             Text("Continue")
