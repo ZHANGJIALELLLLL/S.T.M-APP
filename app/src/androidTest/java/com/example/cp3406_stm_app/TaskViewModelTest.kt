@@ -76,8 +76,8 @@ class TaskViewModelTest {
         // Get the task list
         val tasks = viewModel.tasks.first()//b
         // Safety inspection: Ensure there are tasks
-        Assert.assertTrue("任务列表不应为空", tasks.isNotEmpty())
-        Assert.assertEquals("应该有2个任务", 2, tasks.size)
+        Assert.assertTrue("The task list should not be empty", tasks.isNotEmpty())
+        Assert.assertEquals("There should be two tasks", 2, tasks.size)
 
         val firstTask = tasks.first()//a
         viewModel.toggleTaskCompleted(firstTask.id, true)
