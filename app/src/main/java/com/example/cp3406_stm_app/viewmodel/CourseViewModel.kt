@@ -26,6 +26,7 @@ class CourseViewModel(app: Application) : AndroidViewModel(app) {
         }
     }
 
+
     fun deleteCourse(course: CourseEntity) {
         viewModelScope.launch {
             repository.deleteCourse(course)

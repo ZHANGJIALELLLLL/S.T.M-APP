@@ -38,6 +38,7 @@ class TaskViewModel(app: Application, repository: TaskRepository? = null) : Andr
         }
     }
 
+
     fun cleanExpired() {
         viewModelScope.launch {
             repository.deleteExpiredTasks()

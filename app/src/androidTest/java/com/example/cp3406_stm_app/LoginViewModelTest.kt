@@ -69,4 +69,5 @@ class LoginViewModelTest {
         Assert.assertFalse(finalState)
     }
 
+
 }

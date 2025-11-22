@@ -8,6 +8,7 @@ import kotlinx.coroutines.launch
 
 class LoginViewModel() : ViewModel() {
 //test is empty
+
     private val _email = MutableStateFlow("")
     val email: StateFlow<String> = _email
 

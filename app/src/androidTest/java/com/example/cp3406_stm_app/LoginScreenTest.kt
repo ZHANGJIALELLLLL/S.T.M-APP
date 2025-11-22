@@ -46,4 +46,5 @@ class LoginScreenTest {
         composeRule.onNodeWithText("Email").performTextInput("user@example.com")
         composeRule.onNodeWithText("Continue").assertIsEnabled()
     }
+
 }

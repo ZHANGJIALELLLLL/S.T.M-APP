@@ -86,5 +86,6 @@ class TaskViewModelTest {
         val progress = viewModel.progress.first()
         Assert.assertEquals(0.5f, progress, 0.01f)  // Add "delta" to avoid floating-point precision issues
     }
+
 }
 

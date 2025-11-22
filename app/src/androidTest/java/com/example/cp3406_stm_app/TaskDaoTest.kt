@@ -45,4 +45,5 @@ class TaskDaoTest {
         Assert.assertEquals(1, list.size)
         Assert.assertEquals("Test Room", list.firstOrNull()?.name)
     }
+
 }

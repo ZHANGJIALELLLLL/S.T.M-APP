@@ -191,5 +191,6 @@ fun CourseItem(name: String, day: String, start: String, end: String, onDelete: 
             }
             TextButton(onClick = onDelete) { Text("🗑️") }
         }
+
     }
 }
