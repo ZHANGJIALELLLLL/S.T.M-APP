@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
 class LoginViewModel() : ViewModel() {
-//所以test是空的
+//test is empty
     private val _email = MutableStateFlow("")
     val email: StateFlow<String> = _email
 

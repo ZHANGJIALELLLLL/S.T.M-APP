@@ -72,7 +72,7 @@ fun ProgressScreen(navController: NavController) {
                 contentAlignment = Alignment.Center
             ) {
                 Canvas(modifier = Modifier.size(200.dp)) {
-                    val sweepAngle: Float = progressDegree //new,范围调整0到360度
+                    val sweepAngle: Float = progressDegree //new, adjust the range from 0 to 360 degrees
                     drawArc(
                         color = Color.LightGray,
                         startAngle = 0f,
@@ -87,7 +87,7 @@ fun ProgressScreen(navController: NavController) {
                     )
                 }
                 Text(
-                    text = "${progressValue}%",//0到100
+                    text = "${progressValue}%",//0-100
                     style = MaterialTheme.typography.titleLarge
                 )
             }

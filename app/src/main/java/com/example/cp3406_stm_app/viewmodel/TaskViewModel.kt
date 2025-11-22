@@ -43,9 +43,9 @@ class TaskViewModel(app: Application, repository: TaskRepository? = null) : Andr
             repository.deleteExpiredTasks()
         }
     }
-    val progressValue = progress.map { it * 100 }  // 百分比数值
+    val progressValue = progress.map { it * 100 }  // Percentage value
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(), 0f)
 
-    val progressDegrees = progress.map { it * 360 }  // 直接返回角度
+    val progressDegrees = progress.map { it * 360 }  // Return the Angle directly
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(), 0f)
 }

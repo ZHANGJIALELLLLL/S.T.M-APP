@@ -31,10 +31,10 @@ class LoginViewModelTest {
     fun setup() = runTest {
         Dispatchers.setMain(testDispatcher)
 
-        // 创建 ViewModel
-        viewModel = LoginViewModel()//loginviewmodel 里是空的
+        // Create ViewModel
+        viewModel = LoginViewModel()//loginviewmodel is empty
 
-        // 等待 init 块完成
+        // Wait for the "init" block to complete
         advanceUntilIdle()
     }
 
@@ -54,16 +54,16 @@ class LoginViewModelTest {
 
     @Test
     fun toggleRemember_changesRememberState() = runTest {
-        // 初始应该是 false
+        // The initial value should be "false"
         val initialState = viewModel.remember.first()
         Assert.assertFalse(initialState)
 
-        // 切换后应该是 true
+        // It should be "true" after the switch
         viewModel.toggleRemember()
         val toggledState = viewModel.remember.first()
         Assert.assertTrue(toggledState)
 
-        // 再次切换应该回到 false
+        // Switching again should return to "false"
         viewModel.toggleRemember()
         val finalState = viewModel.remember.first()
         Assert.assertFalse(finalState)

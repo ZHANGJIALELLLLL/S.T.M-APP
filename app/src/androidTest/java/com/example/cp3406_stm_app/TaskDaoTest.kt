@@ -26,9 +26,9 @@ class TaskDaoTest {
         db = Room.inMemoryDatabaseBuilder(
             ApplicationProvider.getApplicationContext(),
             AppDatabase::class.java
-        ).allowMainThreadQueries()  // 添加这个允许主线程查询
+        ).allowMainThreadQueries()  // Adding this allows the main thread to query
             .build()
-        dao = db.taskDao()//启动数据库
+        dao = db.taskDao()//Start the database
     }
 
     @After
@@ -38,7 +38,7 @@ class TaskDaoTest {
 
     @Test
     fun insert_and_read_tasks() = runTest {
-        // 使用明确的类型和空检查
+        // Use clear types and null checks
         val testTask = TaskEntity(name = "Test Room", createdAt = System.currentTimeMillis())
         dao.insertTask(testTask)
         val list = dao.getAllTasks().first()
